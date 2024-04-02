@@ -1,4 +1,6 @@
 import abstractClass.PreCoffee
+import annonymusClass.Download
+import annonymusClass.Downloader
 import constructor.Box
 import getterAndsetter.Animal
 import inheritance.PremiumCoffee
@@ -42,11 +44,46 @@ fun main() {
 
      */
 
-    val cat = Cat()
-    cat.sound()
-    cat.properties(4)
+    /*
 
-    val dog = Dog()
-    dog.sound()
-    dog.properties(4)
+      val cat = Cat()
+      cat.sound()
+      cat.properties(4)
+
+      val dog = Dog()
+      dog.sound()
+      dog.properties(4)
+
+     */
+
+    /*
+    //anonymous inner class
+    /*
+    when use anonymous inner class
+    we are using object keyword
+    Syntax is object: interface
+    
+     Anonymous classes in Kotlin are used when you need to create
+     an instance of a class that implements an interface or extends
+     a class without explicitly defining a named subclass.
+     This can be useful for creating one-off implementations
+     of interfaces or extending classes in a concise manner.
+
+     */
+
+    //Class instance
+    val downloader = Download()
+    downloader.download = object : Downloader {
+        override fun downloadingStart() {
+             println("Downloading Start...")
+        }
+
+        override fun downloadingCompleted() {
+            println("Downloading Completed...")
+        }
+
+    }
+    downloader.downloadingStart()
+
+     */
 }
