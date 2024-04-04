@@ -1,11 +1,6 @@
-import abstractClass.PreCoffee
-import annonymusClass.Download
-import annonymusClass.Downloader
-import constructor.Box
-import getterAndsetter.Animal
-import inheritance.PremiumCoffee
-import interfaces.Cat
-import interfaces.Dog
+import Deligates.ClassDownloader
+import Deligates.ClassPlayer
+import Deligates.fileDownloadClass
 
 fun main() {
 
@@ -84,6 +79,18 @@ fun main() {
 
     }
     downloader.downloadingStart()
+
+     */
+
+    /*
+
+    In Kotlin, delegates are a powerful feature that allows you to implement the delegation pattern.
+    Delegation is a design pattern where an object delegates some of its responsibilities to another object.
+    This can help in code reuse, by allowing you to compose classes rather than inherit from them.
+
+    val files = fileDownloadClass(ClassDownloader("Tushar_Voice"),ClassPlayer("VoiceNote"))
+    files.downloadVideo()
+    files.player()
 
      */
 }
