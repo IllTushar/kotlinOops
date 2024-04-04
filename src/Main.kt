@@ -1,3 +1,4 @@
+import DelegatesProperties.Student
 import Deligates.ClassDownloader
 import Deligates.ClassPlayer
 import Deligates.fileDownloadClass
@@ -93,4 +94,10 @@ fun main() {
     files.player()
 
      */
+
+
+    val student = Student()
+    student.firstName = "Tushar"
+    student.lastName = "Gupta"
+    println(student)
 }
