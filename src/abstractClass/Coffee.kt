@@ -1,5 +1,5 @@
 package abstractClass
 
-abstract class Coffee  {
-    abstract fun coffee()
+abstract class Coffee {
+  abstract fun coffee()
 }
