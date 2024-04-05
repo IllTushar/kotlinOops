@@ -1,8 +1,3 @@
-import DelegatesProperties.Student
-import Deligates.ClassDownloader
-import Deligates.ClassPlayer
-import Deligates.fileDownloadClass
-
 fun main() {
 
     /*
@@ -96,8 +91,29 @@ fun main() {
      */
 
 
-    val student = Student()
-    student.firstName = "Tushar"
-    student.lastName = "Gupta"
-    println(student)
+    /*
+     This Student is used to show the delegates.
+        val student = Student()
+        student.firstName = "Tushar"
+        student.lastName = "Gupta"
+        println(student)
+     *//*
+
+    println(CompanionObject.Student.getInstance())
+    println(CompanionObject.Student.getInstance())
+
+    //Note: when user use invoke function then they
+    //can directly call class constructor even it was private as well
+    //call invoke function.
+    println(CompanionObject.Student())
+    println(CompanionObject.Student.invoke())
+   */
+    /*
+      Note: in companionObject we would be written lots of
+      boilerplate code so we should using singleton class
+      denoted by object keyword
+
+      SingeltonClass.Student
+     */
 }
+
