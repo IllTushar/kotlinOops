@@ -1,5 +1,6 @@
 import dataClass.dataModel
 import genericClass.PersonalClass
+import nestedClass.Box
 
 fun main() {
 
@@ -144,8 +145,23 @@ fun main() {
     println(name)
      */
 
+    /*
+    Generic class
     val personalDetails = PersonalClass<Int,String>(1,"Tushar Gupta")
     personalDetails.details()
+     */
+
+
+    /*
+     we can't access Content class directly using box instance
+     this possible only when we are using inner keyword with Content
+     class. otherwise we can access Box.Content("You can do it")
+    */
+
+    val box = Box(10, 10, 10)
+    val content = box.Content("You can do it!!")
+    content.printContent()
+    content.printBoxInfo()
 }
 
 
