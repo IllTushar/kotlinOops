@@ -1,4 +1,5 @@
 import dataClass.dataModel
+import genericClass.PersonalClass
 
 fun main() {
 
@@ -142,6 +143,9 @@ fun main() {
     println(id)
     println(name)
      */
+
+    val personalDetails = PersonalClass<Int,String>(1,"Tushar Gupta")
+    personalDetails.details()
 }
 
 
