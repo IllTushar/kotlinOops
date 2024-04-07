@@ -1,3 +1,5 @@
+import dataClass.dataModel
+
 fun main() {
 
     /*
@@ -115,5 +117,31 @@ fun main() {
 
       SingeltonClass.Student
      */
+
+    /*
+    "Note: Data class could not be inherited because it could
+           not be make open or abstract but in data class
+           you can inherit other classes or interface!!"
+
+
+    val person = dataModel(1, "Tushar", "India")
+    println(person)
+    println(person.printName())
+
+
+    //componentN function
+    println(person.component1())
+    println(person.component2())
+    println(person.component3())
+
+    println()
+
+    //destructuring
+    val (id, name, country) = person
+
+    println(id)
+    println(name)
+     */
 }
+
 
